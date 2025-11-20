@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leadership & Tech Politics – Jignasha Mehta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --accent: #1f6feb;
+      --text-main: #222222;
+      --text-muted: #666666;
+      --border-soft: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem 1.75rem;
+      border: 1px solid var(--border-soft);
+      margin-bottom: 2rem;
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-sub {
+      color: var(--text-muted);
+      margin-bottom: 1.15rem;
+      max-width: 34rem;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .pill-row {
+      margin-top: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: #fafafa;
+      color: var(--text-muted);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .section-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .post-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .post-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid var(--border-soft);
+      padding: 1.15rem 1.1rem;
+    }
+
+    .post-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .post-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .post-excerpt {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #234;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      .hero {
+        padding: 2.25rem 2rem;
+      }
+
+      .post-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">The Quiet Flame · Leadership</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/leadership.html">Leadership</a>
+        <a href="https://projects.jignashamehta.com">Projects</a>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-kicker">Life in tech leadership</div>
+      <h1 class="hero-title">Real talk about power, people, and politics in tech.</h1>
+      <p class="hero-sub">
+        Notes from the rooms where decisions actually get made: navigating egos,
+        leading teams, saying the hard thing kindly, and staying sane while you
+        climb.
+      </p>
+      <div class="hero-meta">
+        Written by <strong>Jignasha Mehta</strong> · Solution Architect & people leader who
+        thinks in systems, feelings, and strategy at the same time.
+      </div>
+      <div class="pill-row">
+        <span class="pill">Team management</span>
+        <span class="pill">Company politics</span>
+        <span class="pill">Crucial conversations</span>
+        <span class="pill">Women in tech leadership</span>
+      </div>
+    </section>
+
+    <!-- Featured playbooks -->
+    <section>
+      <div class="section-header">
+        <div class="section-title">Featured playbooks</div>
+        <div class="section-note">Short, practical, copy-paste friendly.</div>
+      </div>
+
+      <div class="post-list">
+        <article class="post-card">
+          <h2 class="post-title"> How I handle conflict with senior leaders without burning bridges</h2>
+          <div class="post-meta">Crucial conversations · 7 min read</div>
+          <p class="post-excerpt">
+            A simple structure I use when I need to push back on a VP or director:
+            how I prepare, phrases I use, and how I protect the relationship.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Exec communication</span>
+            <span class="tag">Scripts</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title"> Running 1:1s that actually change behavior</h2>
+          <div class="post-meta">People management · 6 min read</div>
+          <p class="post-excerpt">
+            The agenda, questions, and follow-up pattern I use to move engineers from
+            “stuck and defensive” to “curious and accountable”.
+          </p>
+          <div class="post-tags">
+            <span class="tag">1:1s</span>
+            <span class="tag">Coaching</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Real stories -->
+    <section>
+      <div class="section-header">
+        <div class="section-title">Stories from inside the team</div>
+        <div class="section-note">Anonymous. Honest. No LinkedIn gloss.</div>
+      </div>
+
+      <div class="post-list">
+        <article class="post-card">
+          <h2 class="post-title"> The sprint where everyone was polite and nothing was honest</h2>
+          <div class="post-meta">Team dynamics · 5 min read</div>
+          <p class="post-excerpt">
+            A story about a “calm” stand-up that hid real tension, and how one
+            direct but gentle question changed the entire release.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Psychological safety</span>
+            <span class="tag">Delivery</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title"> When a high performer becomes your loudest critic</h2>
+          <div class="post-meta">Leadership tests · 8 min read</div>
+          <p class="post-excerpt">
+            How I handled a senior engineer who challenged every decision in public
+            — without shutting him down or giving him the steering wheel.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Difficult people</span>
+            <span class="tag">Influence</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Micro notes / quick hits -->
+    <section>
+      <div class="section-header">
+        <div class="section-title">Quick notes</div>
+        <div class="section-note">Bite-sized thoughts from real weeks at work.</div>
+      </div>
+
+      <div class="post-list">
+        <article class="post-card">
+          <h2 class="post-title"> Three sentences I use when politics gets messy</h2>
+          <div class="post-meta">Micro-scripts · 3 min read</div>
+          <p class="post-excerpt">
+            Short lines for when someone takes credit, throws you under the bus,
+            or tries to drag you into drama you didn’t ask for.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Politics</span>
+            <span class="tag">Boundaries</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title"> How I say “no” to extra work without sounding difficult</h2>
+          <div class="post-meta">Boundaries · 4 min read</div>
+          <p class="post-excerpt">
+            My simple framework for declining new projects while still sounding like
+            a team player who understands the bigger picture.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Prioritization</span>
+            <span class="tag">Career</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      Built for leaders who care about both delivery and dignity. ©
+      <span id="year"></span> Jignasha Mehta
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
