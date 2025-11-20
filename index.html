@@ -1,12 +1,292 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Blogs – Jignasha Mehta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --accent: #1f6feb;
+      --text-main: #222222;
+      --text-muted: #666666;
+      --border-soft: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem 1.75rem;
+      border: 1px solid var(--border-soft);
+      margin-bottom: 2rem;
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-sub {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      max-width: 32rem;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .pill-row {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: #fafafa;
+      color: var(--text-muted);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .section-link {
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .section-link:hover {
+      text-decoration: underline;
+    }
+
+    .post-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .post-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      border: 1px solid var(--border-soft);
+      padding: 1.15rem 1.1rem;
+    }
+
+    .post-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .post-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .post-excerpt {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background: #eef3ff;
+      color: #234;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      .hero {
+        padding: 2.25rem 2rem;
+      }
+
+      .post-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to my blog</h1>
-  <p>More 🔥 content coming soon.</p>
+  <div class="page">
+    <header>
+      <div class="brand">The Quiet Flame · Blog</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="#latest">Latest</a>
+        <a href="#all-posts">All posts</a>
+      </nav>
+    </header>
+
+    <!-- Highlight latest / pinned piece -->
+    <section class="hero" id="latest">
+      <div class="hero-kicker">Latest reflection</div>
+      <h1 class="hero-title">[Replace] The day I decided to stop shrinking myself</h1>
+      <p class="hero-sub">
+        Short stories and honest notes on boundaries, ambition, and navigating people
+        without burning out your own energy.
+      </p>
+      <div class="hero-meta">
+        Updated: <strong>Feb 2025</strong> · Writing about
+        emotional maturity, leadership, and life as a tech woman.
+      </div>
+      <div class="pill-row">
+        <span class="pill">Boundaries</span>
+        <span class="pill">Work & leadership</span>
+        <span class="pill">Family dynamics</span>
+      </div>
+    </section>
+
+    <!-- Recent posts -->
+    <section id="all-posts">
+      <div class="section-header">
+        <div class="section-title">Recent posts</div>
+        <a class="section-link" href="#all-posts">View all</a>
+      </div>
+
+      <div class="post-list">
+        <!-- Card 1 -->
+        <article class="post-card">
+          <h2 class="post-title">[Replace] How I stopped apologizing for existing in rooms</h2>
+          <div class="post-meta">Interpersonal · 6 min read</div>
+          <p class="post-excerpt">
+            A simple three-step script I use when people overstep, 
+            without turning it into a big drama or a silent grudge.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Assertiveness</span>
+            <span class="tag">Scripts</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="post-card">
+          <h2 class="post-title">[Replace] Quiet leadership in loud families</h2>
+          <div class="post-meta">Family & emotions · 5 min read</div>
+          <p class="post-excerpt">
+            Notes from real conversations on staying calm, kind, and very clear when people 
+            test your boundaries again and again.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Family</span>
+            <span class="tag">Boundaries</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="post-card">
+          <h2 class="post-title">[Replace] Designing a life that doesn’t drain you</h2>
+          <div class="post-meta">Life design · 7 min read</div>
+          <p class="post-excerpt">
+            A zoomed-out view of how I think about work, parenting, friendships, and rest —
+            and what I’m still learning.
+          </p>
+          <div class="post-tags">
+            <span class="tag">Life</span>
+            <span class="tag">Clarity</span>
+          </div>
+        </article>
+
+        <!-- You can duplicate more cards like this -->
+      </div>
+    </section>
+
+    <footer>
+      Built with simplicity so the focus stays on the words. ©
+      <span id="year"></span> Jignasha Mehta
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
